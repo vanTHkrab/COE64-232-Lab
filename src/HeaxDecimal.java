@@ -4,8 +4,7 @@ public class HeaxDecimal {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter interger: ");
         int num = sc.nextInt();
-        String hex = Integer.toHexString(num);
-        System.out.println("Hexadecimal: " + hex);
+        System.out.println("Hexadecimal: " + Integer.toHexString(num));
     }
 }
 
