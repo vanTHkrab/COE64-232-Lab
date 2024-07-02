@@ -9,11 +9,11 @@ public class Multiplication {
             System.out.print("Number [2 to 12] :  ");
             int num = sc.nextInt();
             if (num < 2 || num > 12) {
-                System.out.println("Invalid number");
-                continue;
-            }
-            for (int j = 1; j <= 12; j++) {
-                System.out.println(num + " x " + j + " = " + (num * j));
+                System.out.println("Invalid number");             
+            } else {
+                for (int j = 1; j <= 12; j++) {
+                    System.out.println(num + " x " + j + " = " + (num * j));
+                }
             }
         }
         System.out.println("Bye Bye !!!");
