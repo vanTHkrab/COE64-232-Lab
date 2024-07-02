@@ -18,6 +18,8 @@ public class Calculator {
             case '-':
             case '*': 
             case '/': 
+
+            
             case '%': 
                 System.out.print("Please enter x: ");
                 int x = sc.nextInt();

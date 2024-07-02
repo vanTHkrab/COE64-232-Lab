@@ -19,6 +19,5 @@ public class TestChar {
         } else {
             System.out.println(ch + " is a special character.");
         }
-
     }
 }
