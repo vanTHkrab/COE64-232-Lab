@@ -14,13 +14,7 @@ public class Calculator {
         System.out.print("Press operator: ");
         char operator = sc.next().charAt(0);
         switch (operator) {
-            case '+':
-            case '-':
-            case '*': 
-            case '/': 
-
-            
-            case '%': 
+            case '+': case '-': case '*': case '/': case '%': 
                 System.out.print("Please enter x: ");
                 int x = sc.nextInt();
                 System.out.print("Please enter y: ");

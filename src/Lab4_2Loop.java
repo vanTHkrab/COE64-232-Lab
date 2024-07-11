@@ -63,7 +63,7 @@ public class Lab4_2Loop {
 
         Scanner sc = new Scanner(System.in);
         int SecretNumber = (int) (Math.random() * 100), count = 0;
-        System.out.println("Test" + SecretNumber);
+        // System.out.println("Test " + SecretNumber);
         boolean isContinue = true;
         System.out.println("key in your guress number: ");
         do {
