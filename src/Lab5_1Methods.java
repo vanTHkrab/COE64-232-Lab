@@ -68,13 +68,7 @@ public class Lab5_1Methods {
         int n = sc.nextInt();
         total = n;
         while (n-- > 0) {
-            int i = 3, sum = 0;
-            while (i-- > 0) {
-                int die = (int) (Math.random() * 6) + 1;
-                sum += die;
-                System.out.print(die + " ");
-            }
-            if (isBetween6And12(sum)) {
+            if (isBetween6And12()) {
                 System.out.println("Between 6 and 12");
                 p++;
             } else {
@@ -85,7 +79,13 @@ public class Lab5_1Methods {
         System.out.println("Percentage " + df.format(per) + "%");
     }
 
-    public static boolean isBetween6And12(int n) {
-        return n >= 6 && n <= 12;
+    public static boolean isBetween6And12() {
+        int sum = 0;
+        for (int i = 0; i < 3; i++) {
+            int die = (int) (Math.random() * 6) + 1;
+            sum += die;
+            System.out.print(die + " ");
+        }
+        return sum >= 6 && sum <= 12;
     }
 } 
