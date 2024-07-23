@@ -121,6 +121,39 @@ public class Lab7_1Array {
 
     // -------------------------------------------------------------------------------------
 
+    // public static void main(String[] args) {
+    //     int[][] SAttQ = {
+    //         {1, 2, 1, 3, 3, 4, 5, 5, 1, 4},
+    //         {4, 2, 1, 2, 3, 1, 5, 5, 1, 4},
+    //         {5, 4, 4, 1, 3, 2, 5, 5, 1, 4},
+    //         {3, 2, 1, 5, 4, 3, 5, 5, 1, 4},
+    //         {1, 2, 4, 3, 3, 4, 5, 5, 1, 4},
+    //         {2, 2, 5, 3, 3, 4, 5, 5, 1, 4},
+    //         {2, 2, 1, 3, 3, 4, 5, 5, 1, 4},
+    //         {5, 2, 5, 3, 3, 4, 5, 5, 1, 4},
+    //     };
+    //     int[] KttQ = {4, 2, 4, 3, 3, 4, 1, 5,1 ,4};
+    //     for (int i = 0; i < SAttQ.length; i++) {
+    //         System.out.println("Student " + (i + 1) + " score: " + MCT(SAttQ, KttQ)[i]);
+    //     }
+    // }
+
+    // public static int[] MCT(int[][] SAttQ, int[] KttQ) {
+    //     int[] score = new int[SAttQ.length];
+    //     for (int i = 0; i < SAttQ.length; i++) {
+    //         int sum = 0;
+    //         for (int j = 0; j < SAttQ[i].length; j++) {
+    //             if (SAttQ[i][j] == KttQ[j]) {
+    //                 sum += 1;
+    //             }
+    //         }
+    //         score[i] = sum;
+    //     }
+    //     return score;
+    // }
+
+    // -------------------------------------------------------------------------------------
+
     public static void main(String[] args) {
         int[][] SAttQ = {
             {1, 2, 1, 3, 3, 4, 5, 5, 1, 4},
@@ -134,22 +167,13 @@ public class Lab7_1Array {
         };
         int[] KttQ = {4, 2, 4, 3, 3, 4, 1, 5,1 ,4};
         for (int i = 0; i < SAttQ.length; i++) {
-            System.out.println("Student " + (i + 1) + " score: " + MCT(SAttQ, KttQ)[i]);
-        }
-    }
-
-    public static int[] MCT(int[][] SAttQ, int[] KttQ) {
-        int[] score = new int[SAttQ.length];
-        for (int i = 0; i < SAttQ.length; i++) {
             int sum = 0;
             for (int j = 0; j < SAttQ[i].length; j++) {
                 if (SAttQ[i][j] == KttQ[j]) {
                     sum += 1;
                 }
             }
-            score[i] = sum;
+            System.out.println("Student " + (i + 1) + " score: " + sum);
         }
-        return score;
     }
-
 }
