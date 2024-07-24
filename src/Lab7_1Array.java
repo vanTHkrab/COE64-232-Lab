@@ -154,26 +154,47 @@ public class Lab7_1Array {
 
     // -------------------------------------------------------------------------------------
 
+//     public static void main(String[] args) {
+//         int[][] SAttQ = {
+//             {1, 2, 1, 3, 3, 4, 5, 5, 1, 4},
+//             {4, 2, 1, 2, 3, 1, 5, 5, 1, 4},
+//             {5, 4, 4, 1, 3, 2, 5, 5, 1, 4},
+//             {3, 2, 1, 5, 4, 3, 5, 5, 1, 4},
+//             {1, 2, 4, 3, 3, 4, 5, 5, 1, 4},
+//             {2, 2, 5, 3, 3, 4, 5, 5, 1, 4},
+//             {2, 2, 1, 3, 3, 4, 5, 5, 1, 4},
+//             {5, 2, 5, 3, 3, 4, 5, 5, 1, 4},
+//         };
+//         int[] KttQ = {4, 2, 4, 3, 3, 4, 1, 5,1 ,4};
+//         for (int i = 0; i < SAttQ.length; i++) {
+//             int sum = 0;
+//             for (int j = 0; j < SAttQ[i].length; j++) {
+//                 if (SAttQ[i][j] == KttQ[j]) {
+//                     sum += 1;
+//                 }
+//             }
+//             System.out.println("Student " + (i + 1) + " score: " + sum);
+//         }
+//     }
+
+    //--------------------------------------------------
+
     public static void main(String[] args) {
-        int[][] SAttQ = {
-            {1, 2, 1, 3, 3, 4, 5, 5, 1, 4},
-            {4, 2, 1, 2, 3, 1, 5, 5, 1, 4},
-            {5, 4, 4, 1, 3, 2, 5, 5, 1, 4},
-            {3, 2, 1, 5, 4, 3, 5, 5, 1, 4},
-            {1, 2, 4, 3, 3, 4, 5, 5, 1, 4},
-            {2, 2, 5, 3, 3, 4, 5, 5, 1, 4},
-            {2, 2, 1, 3, 3, 4, 5, 5, 1, 4},
-            {5, 2, 5, 3, 3, 4, 5, 5, 1, 4},
-        };
-        int[] KttQ = {4, 2, 4, 3, 3, 4, 1, 5,1 ,4};
-        for (int i = 0; i < SAttQ.length; i++) {
-            int sum = 0;
-            for (int j = 0; j < SAttQ[i].length; j++) {
-                if (SAttQ[i][j] == KttQ[j]) {
-                    sum += 1;
-                }
-            }
-            System.out.println("Student " + (i + 1) + " score: " + sum);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter no. of point: ");
+        int n = sc.nextInt();
+        double[][] point = new double[n][2];
+        double distance = 0;
+        for (int i = 0; i < n; i++) {
+            System.out.print("Point " + (i + 1) + " coordinate: ");
+            point[i][0] = sc.nextDouble();
+            point[i][1] = sc.nextDouble();
         }
+        
+        for (int i = 0; i < n; i++) {
+            distance += Math.sqrt(Math.pow(point[i][0] - point[(i + 1) % n][0], 2) + Math.pow(point[i][1] - point[(i + 1) % n][1], 2));
+        }
+        System.out.println("Perimeter: " + distance);
+
     }
 }
