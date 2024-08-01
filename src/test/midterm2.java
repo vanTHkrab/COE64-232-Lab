@@ -1,6 +1,6 @@
 package test;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 // public class midterm2 {
 //     public static void main(String[] args) {
