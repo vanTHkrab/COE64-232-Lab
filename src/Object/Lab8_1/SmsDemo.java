@@ -28,6 +28,14 @@ public class SmsDemo {
         s = this.toString();
         t = anotherObject.toString();
         return s.equals(t);
+    
     }
+    
+    // public boolean equals(SMS sm1, SMS sm2) {
+    //     String s, t;
+    //     s = sm1.toString();
+    //     t = sm2.toString();
+    //     return s.equals(t);
+    // }
     
 }
