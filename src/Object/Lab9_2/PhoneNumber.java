@@ -21,12 +21,14 @@ public class PhoneNumber {
 
     public int[] calFreq() {
         int[] result = new int[10];
-        for (int i = 0; i<this.number.length(); i++) {
+        for (int i = 0; i < this.number.length(); i++) {
             int digit = this.number.charAt(i) - '0';
-                 result[digit] ++;;
+            result[digit] ++;;
         }
         return result;
     }
+
+    // {0, 4, 2, 0, 0, 0, 0, 0, 0, 0}
 
     public String toString() {
         return this.number;

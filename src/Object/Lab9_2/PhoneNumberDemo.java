@@ -26,16 +26,15 @@ public class PhoneNumberDemo {
     }
 
     public static void displayDigit(int[] result) {
+        // {0, 4, 2, 0, 0, 0, 0, 0, 0, 0}
         for (int a = 0; a < 10; a++) {
-            boolean isSpace = false;
             if (result[a] != 0) {
                 System.out.printf("%d ", a);
                 for (int j = 0; j < result[a]; j++) {
                     System.out.print("*");
                 }
-                isSpace = true;
+                System.out.println();
             }
-            if (isSpace) System.out.println();
         }
     }
 }
