@@ -26,11 +26,12 @@ public class Course {
         return grade;
     }
 
+    public void setGrade(String g) {
+        this.grade = g;
+    }
+    
     public String toString() {
         return courseID + "    " + unit + "     " + grade;
     }
 
-    public void setGrade(String g) {
-        this.grade = g;
-    }
 }
