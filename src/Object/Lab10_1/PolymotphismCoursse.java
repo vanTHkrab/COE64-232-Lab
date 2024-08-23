@@ -39,8 +39,7 @@ public class PolymotphismCoursse {
         String g = sc.next();
         System.out.print("Year: ");
         int y = sc.nextInt();
-        Course major4 = new MajorCourse(c, u, g, y);
-        course.add(major4);
+        course.add(new MajorCourse(c, u, g, y));
         
         System.out.println("====================================");
         System.out.println("Delete course: ");
