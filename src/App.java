@@ -14,6 +14,8 @@ public class App {
         System.out.println("Fahrenheit: " + f);
     }
 
-    public static 
+    public static void display() {
+        System.out.println("Hello");
+    }
 }
 
