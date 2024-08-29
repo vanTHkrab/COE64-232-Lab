@@ -7,7 +7,7 @@ public class Dice {
     }
 
     public void toss() {
-        number = (int)Math.random() * 6 + 1;
+        number = (int) (Math.random() * 6) + 1;
     }
 
     public int getNumber() {

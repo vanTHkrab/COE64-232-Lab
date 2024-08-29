@@ -13,9 +13,5 @@ public class App {
         double f = (c * 9.0 / 5.0) + 32;
         System.out.println("Fahrenheit: " + f);
     }
-
-    public static void display() {
-        System.out.println("Hello");
-    }
 }
 
