@@ -271,67 +271,67 @@ public class minterm {
 
     // ===================================================
 
-    // public static void main(String[] args) {
-    //     Scanner sc = new Scanner(System.in);
-    //     char[] grade = {'A', 'B', 'C', 'D', 'F'};
-    //     int n = sc.nextInt();
-    //     int[] freq = new int[5];
-    //     for (int i = 0; i < n; i++) {
-    //         switch (sc.next().charAt(0)) {
-    //             case 'A':
-    //                 freq[0]++;
-    //                 break;
-    //             case 'B':
-    //                 freq[1]++;
-    //                 break;
-    //             case 'C':
-    //                 freq[2]++;
-    //                 break;
-    //             case 'D':
-    //                 freq[3]++;
-    //                 break;
-    //             case 'F':
-    //                 freq[4]++;
-    //                 break;
-    //             default:
-    //                 break;
-    //         }
-    //     }
-    //     printChar(freq, grade);
-    // }
+     public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+         char[] grade = {'A', 'B', 'C', 'D', 'F'};
+         int n = sc.nextInt();
+         int[] freq = new int[5];
+         for (int i = 0; i < n; i++) {
+             switch (sc.next().charAt(0)) {
+                 case 'A':
+                     freq[0]++;
+                     break;
+                 case 'B':
+                     freq[1]++;
+                     break;
+                 case 'C':
+                     freq[2]++;
+                     break;
+                 case 'D':
+                     freq[3]++;
+                     break;
+                 case 'F':
+                     freq[4]++;
+                     break;
+                 default:
+                     break;
+             }
+         }
+         printChar(freq, grade);
+     }
 
-    // public static void printChar(int[] freq, char[] grade) {
-    //     for (int i = 0; i < grade.length; i++) {
-    //         System.out.print(grade[i] + " ");
-    //         for (int j = 0; j < freq[i]; j++) {
-    //             System.out.print("*");
-    //         }
-    //         System.out.println();
-    //     }
-    // }
+     public static void printChar(int[] freq, char[] grade) {
+         for (int i = 0; i < grade.length; i++) {
+             System.out.print(grade[i] + " ");
+             for (int j = 0; j < freq[i]; j++) {
+                 System.out.print("*");
+             }
+             System.out.println();
+         }
+     }
 
     // =====================================================
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE, e = 0, o = 0, n, t = 0;
-        do {
-            n = sc.nextInt();
-            if (n != 0) {
-                if (n % 2 == 0) e += n;
-                else o += n;
-                
-                if(n > max) max = n;
-                else min = n;
-                t++;
-            }
-        } while(n != 0);
-        if (t<=0) {
-            System.out.println(o);
-            System.out.println(e);
-            System.out.println(max);
-            System.out.println(min);
-        } else {
-            System.out.println("In");
-        }
-    }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE, e = 0, o = 0, n, t = 0;
+//        do {
+//            n = sc.nextInt();
+//            if (n != 0) {
+//                if (n % 2 == 0) e += n;
+//                else o += n;
+//
+//                if(n > max) max = n;
+//                else min = n;
+//                t++;
+//            }
+//        } while(n != 0);
+//        if (t<=0) {
+//            System.out.println(o);
+//            System.out.println(e);
+//            System.out.println(max);
+//            System.out.println(min);
+//        } else {
+//            System.out.println("In");
+//        }
+//    }
 }
